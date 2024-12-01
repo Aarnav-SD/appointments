@@ -1,0 +1,63 @@
+/* Global Styles */
+body {
+  background-image: url('https://img.freepik.com/premium-photo/long-dark-hospital-corridor-with-rooms_780672-267.jpg?semt=ais_hybrid');
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  margin: 0; /* Removes default margin around the body */
+  padding: 0; /* Removes default padding around the body */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes full height of the viewport */
+  animation: backgroundAnimation 20s infinite;
+}
+
+#root {
+  flex: 1; /* This will allow the root container to take up available space */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* Full height for body */
+}
+
+/* Ensure the #root div also takes full height */
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form, input, button, .login-container {
+  margin: 0;
+  padding: 0;
+}
+@keyframes backgroundAnimation {
+  0% {background-image: url('https://img.freepik.com/premium-photo/long-dark-hospital-corridor-with-rooms_780672-267.jpg?semt=ais_hybrid');}
+  25% {background-image: url('https://www.shutterstock.com/image-illustration/long-dark-hospital-corridor-rooms-600nw-2153166539.jpg');}
+  50% {background-image: url('https://media.istockphoto.com/id/108162808/photo/long-and-dark-hospital-hallway.jpg?s=612x612&w=0&k=20&c=1KwJaCm2u-Gp1HSZ9r_eq2GYoYKJi0O6QvDFrHyIpFY=');}
+  75% {background-image: url('https://img.freepik.com/free-psd/entrance-emergency-room-hospital-generative-ai_587448-2242.jpg?t=st=1731831026~exp=1731834626~hmac=a77165931496bb8f998c9a6d759d64613357a61d180d590374af91e461b02a3e&w=1060');}
+  100% {background-image: url('https://img.freepik.com/premium-photo/long-dark-hospital-corridor-with-rooms_780672-267.jpg?semt=ais_hybrid');}
+}

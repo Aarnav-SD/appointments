@@ -1,0 +1,182 @@
+/* Login Styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures the container takes up the full height */
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 30px; /* Adds gap between login form and footer */
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 500px; /* Reasonable width for the login box */
+    background: transparent;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form input {
+    width: 95%; /* Makes inputs fit inside the form */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .login-btn:disabled {
+    background-color: #a1c4f0;
+    cursor: not-allowed;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px; /* Adds space between the buttons */
+    margin-bottom: 15px; /* Adds space between buttons and form */
+  }
+  
+  /* Sign In Button */
+  .signin-btn,
+  .forgot-password-btn {
+    flex: 1; /* Allows buttons to grow and take up equal width */
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Sign In Button */
+  .signin-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .signin-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Forgot Password Button */
+  .forgot-password-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .forgot-password-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .forgot-password-btn:disabled {
+    background-color: #f5a5a5;
+    cursor: not-allowed;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #213547;
+    color: #ffffff;
+    width: 100%; /* Ensures footer spans full width */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    text-align: left;
+    padding: 0 15px; /* Padding to avoid contact with footer border */
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 5px;
+    color: #79c1ff;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  /* #root Styles */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures root takes full viewport height */
+  }
+  
+  /* Ensures footer remains at the bottom */
+  .login-container {
+    flex-grow: 1; /* Makes the login container take the remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #213547;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .login-form {
+    animation: fadeIn 1s ease-in-out;
+  }  
