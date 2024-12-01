@@ -16,7 +16,7 @@ function Login() {
   
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/login',
+        'https://aarnav-sd.github.io/appointments/api/login',
         {
           patient_id: patientId,
           password: password,

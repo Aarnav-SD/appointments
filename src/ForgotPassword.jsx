@@ -22,7 +22,7 @@ function ForgotPassword() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/reset-password', {
+      const response = await axios.post('https://aarnav-sd.github.io/appointments/api/reset-password', {
         patient_id: patientId,
         new_password: newPassword,
         confirm_password: confirmPassword,

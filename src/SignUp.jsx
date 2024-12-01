@@ -22,7 +22,7 @@ function SignUp() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', {
+      const response = await axios.post('https://aarnav-sd.github.io/appointments/api/register', {
         name: name,  // Include name in the request
         patient_id: patientId,
         password: password,
